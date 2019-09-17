@@ -1,4 +1,4 @@
-# tracklocation
+# Android Location Tracker
 Location tracker for android
 
 Using service to track user location. Unfortunately we cannot use work manager for this task because it requires that periodic work
