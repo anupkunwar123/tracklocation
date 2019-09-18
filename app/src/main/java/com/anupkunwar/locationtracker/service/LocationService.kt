@@ -54,7 +54,8 @@ class LocationService : DaggerService() {
             locationCallback,
             Looper.getMainLooper()
         )
-        return super.onStartCommand(intent, flags, startId)
+        //if incase the service is killed, restart it
+        return START_STICKY
     }
 
     override fun onDestroy() {
